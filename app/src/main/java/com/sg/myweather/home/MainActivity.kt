@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         )
     }
 
-    private fun dailyForecastData(): ArrayList<DailyForecastModel>{
+    private fun dailyForecastData(): ArrayList<DailyForecastModel> {
         return arrayListOf(
             DailyForecastModel("Cloudy", 10, 10),
             DailyForecastModel("Cloudy", 10, 10),

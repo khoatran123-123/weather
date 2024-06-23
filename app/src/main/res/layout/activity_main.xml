@@ -126,14 +126,15 @@
 
             <LinearLayout
                 android:id="@+id/btnMinutes"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintBottom_toBottomOf="@id/ivBackground"
-                app:layout_constraintTop_toBottomOf="@id/ivBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:background="@drawable/bg_radius_2"
                 android:padding="8dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                app:layout_constraintBottom_toBottomOf="@id/ivBackground"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivBackground">
+
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -153,6 +154,7 @@
                     app:layout_constraintTop_toBottomOf="@id/ivBackground" />
 
             </LinearLayout>
+
             <TextView
                 android:id="@+id/tvTitleForecast"
                 android:layout_width="wrap_content"
@@ -190,25 +192,26 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="48dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="16dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_component"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rcvHourly">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/clDailyForecast"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    android:background="@drawable/bg_component_white"
                     android:layout_margin="8dp"
+                    android:background="@drawable/bg_component_white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
+
                     <TextView
                         android:id="@+id/tvTitleDailyForecast"
                         android:layout_width="wrap_content"
@@ -218,9 +221,9 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/daily_forecast"
                         android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/tvDailyHourlyTimeSetting"
@@ -231,26 +234,26 @@
                         android:layout_marginBottom="16dp"
                         android:text="@string/_15_days"
                         android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"/>
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
-                
+
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rcvDailyForecast"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
                     android:orientation="vertical"
                     app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintTop_toBottomOf="@id/clDailyForecast"
-                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clDailyForecast"
                     tools:itemCount="5"
-                    tools:listitem="@layout/item_daily"/>
+                    tools:listitem="@layout/item_daily" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

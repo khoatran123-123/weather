@@ -9,7 +9,8 @@ import com.sg.myweather.R
 import com.sg.myweather.databinding.ItemHourlyBinding
 import com.sg.myweather.home.model.HourlyModel
 
-class HourlyAdapter(private val dataList: List<HourlyModel>) : RecyclerView.Adapter<HourlyAdapter.HourlyViewHolder>(){
+class HourlyAdapter(private val dataList: List<HourlyModel>) :
+    RecyclerView.Adapter<HourlyAdapter.HourlyViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HourlyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_hourly, parent, false)
