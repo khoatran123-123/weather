@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">My Weather</string>
+    <string name="daily_forecast">Daily Forecast</string>
+    <string name="_15_days"><![CDATA[15 Days >]]></string>
+    <string name="hourly_forecast">Hourly forecast</string>
+    <string name="no_precip_for_120min">No precip for 120min</string>
+    <string name="_47">47°</string>
+    <string name="cloudy">Cloudy</string>
 </resources>
